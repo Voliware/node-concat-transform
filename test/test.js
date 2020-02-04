@@ -47,3 +47,19 @@ it('concatenates a stream', function(){
     let concat_transform = new ConcatTransform();
     return run(concat_transform, readable_data, expectation);
 });
+
+it('concatenates chunks based on a header', function(){
+    let readable_data = "";
+    let expectation = readable_data;
+    let concat_transform = new ConcatTransform();
+    return run(concat_transform, readable_data, expectation);
+});
+
+it('concatenates chunks using a start delimiter', function(){
+});
+
+it('concatenates chunks using a end delimiter', function(){
+});
+
+it('concatenates chunks using a start and end delimiter', function(){
+});

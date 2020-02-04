@@ -40,11 +40,11 @@ If you are receiving data that has a header, or a start delimiter and/or end del
 let concat_transform = new ConcatTransform({
     // strings or Buffers are accepted
     delimiter: {
-        start: "START",
-        end: "END"
+        start: "<START>",
+        end: "<END>"
     }
     // to parse a header, write a custom function
     // that will return the expected full chunk length
-    header: header_parsing_function
+    header_parser: header_parsing_function
 });
 ```
